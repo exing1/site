@@ -9,6 +9,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.stat {
+  text-align: center;
+}
+
 .small {
   font-size: 32px;
   font-style: italic;
@@ -149,6 +153,7 @@ body {
 }
 
 .line {
+  width: 100vw;
   height: 2px;
   background-color: black;
 }
@@ -184,8 +189,10 @@ body {
 }
 
 #logo {
+  height: 64px;
+  width: 64px;
   position: absolute;
-  bottom: 32px;
+  bottom: 48px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -197,6 +204,11 @@ body {
   backface-visibility: hidden;
 }
 
+#main {
+  width: 54px;
+  height: 54px;
+}
+
 #main:hover #main-path {
   stroke: #60c1eb;
 }
@@ -204,14 +216,6 @@ body {
 @keyframes slide-top {
   from {
     transform: translateY(-100%);
-  } to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes slide-bottom {
-  from {
-    transform: translateY(80%);
   } to {
     transform: translateY(0);
   }
@@ -253,7 +257,44 @@ body {
   .cards {
     flex-direction: column;
   }
+
   .card {
     width: 60vw;
+  }
+
+  .App {
+    font-size: medium;
+  }
+
+  .text {
+    width: 90vw;
+  }
+
+  .welcome {
+    height: 240px;
+    width: 240px;
+  }
+
+  .small {
+    font-size: 16px;
+  }
+
+  .welcome-front {
+    font-size: 32px;
+  }
+
+  #hey {
+    top: 48px;
+  }
+
+  #logo {
+    height: 32px;
+    width: 32px;
+    bottom: 40px;
+  }
+
+  #main {
+    width: 27px;
+    height: 27px;
   }
 }

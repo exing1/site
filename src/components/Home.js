@@ -12,7 +12,7 @@ function Home() {
             <div>
               Edward Xing
             </div>
-            <Logo id="logo" height="64" width="64"/>
+            <Logo id="logo"/>
           </div>
           <div className="welcome-back"/>
         </div>
