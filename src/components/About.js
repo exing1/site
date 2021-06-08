@@ -1,18 +1,109 @@
-import { HashLink } from 'react-router-hash-link';
+import Details from './Details';
+import {useState, useEffect} from 'react';
+import Popup from './Popup';
 
 function About() {
+  const [showDetails, setDetails] = useState(false);
+  const display = () => {
+    setDetails(old => !old);
+  };
+  const closePopup = (e) => {
+    if (e.target.className === "popup") {
+      setDetails(false);
+    }
+  }
+  useEffect(() => {
+    if (showDetails) {
+      document.body.style.overflow = "hidden";
+      document.body.onclick = closePopup;
+    } else {
+      document.body.style.overflow = "auto";
+      document.body.onclick = null;
+    }
+  }, [showDetails]);
+
   return (
-    <div className="content" id="about">
-      <div className="text">
-        <h1>About Me</h1>
-        <p>
-          My name is Edward Xing. I am a student at Brown University, class of 2023, studying Applied Mathematics-Computer Science and Economics. Although I entered college having never touched computer science, I have fallen in love with the power it gives me to leverage creativity and bring ideas to life in a way that is unique to me. Throughout my experiences, I have thoroughly explored the intersections of computer science with other fields and found that those which require a synergy of knowledge to be the most rewarding. From being a data analyst to a teaching assistant, I have refined my skillset and strengthened my understanding of core computer science concepts. Through my <HashLink className="inline-link" smooth to="#projects">projects</HashLink>, I am the most comfortable using computer programming languages such as Java, C++, and Javascript but have ample experience in mathematical languages such as R, SAS, and Matlab.
-        </p>
-        <p>
-          My other interests stem from my propensity towards problem-solving. I am an avid speedcuber with an official record of 9.94 seconds for the 3x3 Rubik's cube. I have spent countless hours developing algorithm sets, modifying underlying mechanisms, and analyzing patterns. That same drive to obtain results has helped improve my abilities as a professional magician. I have performed for people of all walks of life, from corporate executives to cruise ship captains. To amaze them, I have crafted novel illusions and relentlessly practiced sleight-of-hand, requiring a similar kind of ingenuity and creativity that makes the magic of computer science possible. Yet personal well-being is not comprised solely of the mind but the body as well. I continue to train as a member of Brown's table tennis team where I coach new players as well as compete in collegiate tournaments. In the past, I have won the 2018 Joola North American Teams Championship.
-        </p>
+    <>
+      <div className="content" id="about">
+        <div className="text">
+          <h1>About Me</h1>
+        </div>
+        <div className="cards" id="stats">
+          <div className="stat">
+            <h2>
+              Top 3% Speedcuber
+            </h2>
+            <div className="sm">
+              globally ranked,
+              <br/>
+              semifinalist in 8 competitions
+            </div>
+          </div>
+          <div className="stat">
+            <h2>
+              Brown University
+            </h2>
+            <div className="sm">
+              Applied Mathematics-Computer Science Sc.B. and Economics A.B.
+              <br/>
+              GPA: 4.0
+            </div>
+          </div>
+          <div className="stat">
+            <h2>
+              Table Tennis Champion
+            </h2>
+            <div className="sm">
+              2018 JOOLA North American Teams Championship
+            </div>
+          </div>
+          <div className="stat">
+            <h2>
+              Professional Magician
+            </h2>
+            <div className="sm">
+              with over 100 performances
+            </div>
+          </div>
+          <div className="stat">
+            <h2>
+              Best Public Speaker
+            </h2>
+            <div className="sm">
+              Brown Entrepreneurship Program Innovation Dojo Fall 2019 Cohort
+            </div>
+          </div>
+          <div className="stat">
+            <h2>
+              Over 100k Views
+            </h2>
+            <div className="sm">
+              on YouTube with over 2k likes
+            </div>
+          </div>
+          <div className="stat">
+            <h2>
+              Over 100 Hours
+            </h2>
+            <div className="sm">
+              of volunteer work for WCA, hospitals, and learning centers.
+            </div>
+          </div>
+          <div className="stat">
+            <h2>
+              Hackathon Winner
+            </h2>
+            <div className="sm">
+              Winner of the WolframAlpha and Contrary Venure Capital Awards at Hack@Brown 2021.
+            </div>
+          </div>
+        </div>
+        <button className="learn" onClick={display}>
+            <strong>Learn More</strong>
+        </button>
       </div>
-    </div>
+      {showDetails ? <Popup message={<Details/>} toggle={display}/> : null}
+    </>
   );
 }
 

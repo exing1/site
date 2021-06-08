@@ -3,7 +3,8 @@ function Project() {
     <div className="content" id="projects">
       <div className="text">
         <h1>Featured Projects</h1>
-        <div className="cards">
+      </div>
+      <div className="cards">
           <div className="card">
             <h2>CDN Caching</h2>
             <p>
@@ -23,7 +24,6 @@ function Project() {
             </p>
           </div>
         </div>
-      </div>
     </div>
   );
 }
