@@ -54,7 +54,7 @@ function About() {
               Table Tennis Champion
             </h2>
             <div className="sm">
-              2018 JOOLA North American Teams Championship
+              at 2018 JOOLA North American Teams Championship
             </div>
           </div>
           <div className="stat">
@@ -86,7 +86,7 @@ function About() {
               Over 100 Hours
             </h2>
             <div className="sm">
-              of volunteer work for WCA, hospitals, and learning centers.
+              of volunteer work for WCA, hospitals, and learning centers
             </div>
           </div>
           <div className="stat">
@@ -94,7 +94,7 @@ function About() {
               Hackathon Winner
             </h2>
             <div className="sm">
-              Winner of the WolframAlpha and Contrary Venure Capital Awards at Hack@Brown 2021.
+              of the WolframAlpha and Contrary Venure Capital Awards at Hack@Brown 2021
             </div>
           </div>
         </div>
