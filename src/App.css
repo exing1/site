@@ -32,7 +32,6 @@ body {
 }
 
 .small {
-  font-size: 32px;
   font-style: italic;
 }
 
@@ -340,11 +339,9 @@ body {
 }
 
 .radial {
-  height: 100%;
-  width: 100%;
+  height: max(42vw, 508px);
+  width: max(42vw, 508px);
   position: absolute;
-  left: 0;
-  top: 0;
   z-index: -1;
 }
 
@@ -449,8 +446,9 @@ body {
     width: 240px;
   }
 
-  .small {
-    font-size: 16px;
+  .radial {
+    height: 386px;
+    width: 386px;
   }
 
   .welcome-front {
@@ -458,6 +456,7 @@ body {
   }
 
   #hey {
+    font-size: 16px;
     top: 48px;
   }
 
