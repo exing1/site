@@ -2,7 +2,7 @@ import Logo from "./Logo";
 import {useState} from 'react';
 
 const BLUE = "#60c1eb";
-const RED = "#FB5052";
+const RED = "#fb5052";
 
 function Home() {
   const [color, setColor] = useState(BLUE);
