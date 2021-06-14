@@ -202,7 +202,7 @@ body {
   top: 0px;
   background-color: white;
   z-index: 10;
-  width: 100vw;
+  width: 100%;
 }
 
 .line {
