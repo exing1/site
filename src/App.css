@@ -353,8 +353,8 @@ body {
   fill: transparent;
   stroke-linecap: round;
   stroke-width: 16px;
-  stroke-dasharray: 250;
-  stroke-dashoffset: 1500;
+  stroke-dasharray: 251;
+  stroke-dashoffset: 1506;
   animation: rotate 20s linear 1.7s infinite, coloring1 1.8s linear;
   transition: stroke 0.6s ease-in;
 }
