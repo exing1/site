@@ -9,7 +9,7 @@ function Contact() {
       <div className="text">
         <h1>Contact</h1>
         <p>
-          Reach me at <a className="inline-link" href = "mailto: edward_xing@brown.edu">edward_xing@brown.edu</a> or connect with me on social media.
+          Reach me at <a className="inline-link" href = "mailto: edward_xing@alumni.brown.edu">edward_xing@alumni.brown.edu</a> or connect with me on social media.
         </p>
       </div>
       <div className="options">
