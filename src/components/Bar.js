@@ -6,7 +6,7 @@ function Bar() {
     <div className="stick">
       <div className="bar">
         <HashLink smooth to="#start">
-          <Logo id="main" path="main-path"/>
+          <Logo id="home-logo" path="home-logo-path"/>
         </HashLink>
         <div className="options">
           <HashLink className="link" smooth to="#about">

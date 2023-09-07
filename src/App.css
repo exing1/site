@@ -258,12 +258,12 @@ body {
   backface-visibility: hidden;
 }
 
-#main {
+#home-logo {
   width: 54px;
   height: 54px;
 }
 
-#main:hover #main-path {
+#home-logo:hover #home-logo-path {
   stroke: #60c1eb;
 }
 

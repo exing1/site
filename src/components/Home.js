@@ -21,7 +21,7 @@ function Home() {
             <div>
               Edward Xing
             </div>
-            <Logo id="logo"/>
+            <Logo id="logo" path="logo-path"/>
           </div>
           <div className="welcome-back"/>
         </div>
