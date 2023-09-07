@@ -20,7 +20,6 @@ function Bar() {
           </HashLink>
         </div>
       </div>
-      <div className="line"/>
     </div>
   );
 }
