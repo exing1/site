@@ -5,25 +5,31 @@ function Project() {
         <h1>Featured Projects</h1>
       </div>
       <div className="cards">
+        <a href="https://github.com/zhouzypaul/deblur" className="project">
           <div className="card">
-            <h2>CDN Caching</h2>
+            <h2>Deblur</h2>
             <p>
-              Research analyzing caching and eviction policies using Verizon’s Edgecast Caching Emulator by comparing traditional and tangential metrics.
+              Text deblurring using L<sub>0</sub>-regularized intensity and gradient prior for blur kernel estimation through alternating minimization based on half-quadratic splitting.
             </p>
           </div>
+        </a>
+        <a href="https://github.com/exing1/split-it" className="project">
           <div className="card">
-            <h2>Rings</h2>
+            <h2>Split</h2>
             <p>
-              Time management web app that reimagines workflow productivity. Winner of the WolframAlpha and Contrary Venure Capital Awards at Hack@Brown 2021.
+              Bill splitting using optical character recognition and ChatGPT to parse receipts from photos. Winner of Nelson Center for Entrepreneurship Award at Hack@Brown2023.
             </p>
           </div>
+        </a>
+        <a href="https://github.com/seanxzhan/TaiChiMaster" className="project">
           <div className="card">
-            <h2>Fork</h2>
+            <h2>Train</h2>
             <p>
-              Fully functional food recommendation web app for groups that finds restaurants and makes decisions based off of group preferences.
+              Real-time training using OpenPose for pose estimation and joint-angle similarity for accuracy measurement. Used to analyze correlation between exercise accuracy and effectiveness.
             </p>
           </div>
-        </div>
+        </a>
+      </div>
     </div>
   );
 }

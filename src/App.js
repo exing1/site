@@ -4,7 +4,7 @@ import Home from './components/Home.js';
 import About from './components/About';
 import Bar from "./components/Bar";
 import Project from './components/Project';
-import Contact from './components/Contact';
+import Connect from './components/Connect.js';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Home/>
         <About/>
         <Project/>
-        <Contact/>
+        <Connect/>
       </Router>
     </div>
   );

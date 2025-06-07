@@ -19,11 +19,6 @@ body {
   margin: 8px 16px;
   border-radius: 8px;
   padding: 0 8px 4px;
-  transition: box-shadow 200ms ease-in-out;
-}
-
-.stat:hover {
-  box-shadow: 0 0 8px 4px #60c1eb;
 }
 
 .sm {
@@ -179,6 +174,11 @@ body {
   box-shadow: 0 0 40px 40px #60c1eb inset;
 }
 
+.project {
+  text-decoration: none;
+  color: black;
+}
+
 .card {
   text-align: center;
   padding: 0 16px;
@@ -194,6 +194,7 @@ body {
 
 .card:hover {
   transform: scale(1.1);
+  box-shadow: 8px 8px 8px #60c1eb80;
 }
 
 .stick {
@@ -234,6 +235,7 @@ body {
 
 .social:hover {
   transform: scale(1.2);
+  fill: #60c1eb;
 }
 
 #logo {

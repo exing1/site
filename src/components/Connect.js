@@ -1,21 +1,14 @@
 import Github from "./Github";
-import Insta from "./Insta";
 import LinkedIn from "./LinkedIn";
 import Youtube from "./Youtube";
 
-function Contact() {
+function Connect() {
   return (
     <div className="content" id="contact">
       <div className="text">
-        <h1>Contact</h1>
-        <p>
-          Reach me at <a className="inline-link" href = "mailto: edward_xing@alumni.brown.edu">edward_xing@alumni.brown.edu</a> or connect with me on social media.
-        </p>
+        <h1>Connect</h1>
       </div>
       <div className="options">
-        <a className="social" href="https://www.instagram.com/edwardxing_/">
-          <Insta/>
-        </a>
         <a className="social" href="https://www.linkedin.com/in/edward-xing/">
           <LinkedIn/>
         </a>
@@ -30,4 +23,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Connect;
